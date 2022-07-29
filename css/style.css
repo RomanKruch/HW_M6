@@ -273,34 +273,45 @@ footer {
 }
 
 .footer-form {
-    width: 380px;
+    width: 400px;
     height: 40px;
     font-size: 0;
+    display: flex;
 }
 
 input {
-    border: 1px solid #b3b3b3;
-    width: 220px;
-    height: 38px;
+    border: 3px solid #b3b3b3;
     padding-left: 5px;
-    color: #b3b3b3;
 }
 
 input::placeholder {
     color: #b3b3b3;
 }
 
+input:focus {
+    outline: none;
+}
+
+input:required:focus:valid:not(placeholder-shown) {
+    border: 3px green solid;
+}
+
+input:required:focus:invalid:not(placeholder-shown) {
+    border: 3px red solid;
+}
+
 .input-button {
     background-color: #95e1d3;
-    width: 150px;
-    height: 40px;
     color: #fff;
+    width: 100%;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
+    transition: all 0.4s;
 }
 
 .input-button:hover {
     background-color: #b3b3b3;
+    text-decoration: 0.4s;
 }
