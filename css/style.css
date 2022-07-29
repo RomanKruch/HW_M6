@@ -185,7 +185,7 @@ header {
     height: 470px;
     margin-bottom: 30px;
     position: relative;
-    transition: all 0.4s linear;
+    transition: all 0.6s ;
 }
 
 .team-list-content-title {
@@ -209,7 +209,7 @@ header {
     background-image: linear-gradient(rgba(239,138,138.0,5), rgba(230,206,130,0.5));
     width: 100%;
     height: 100%;
-    transition-duration: 0,4s;
+    transition: all 0.6s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -248,12 +248,12 @@ header {
 }
 
 .team-list_item:hover .overlay {
-    transition-duration: 0.4s;
+    transition-duration: 0.6s;
     opacity: 1;
 }
 
 .team-list_item:hover  .img-wrap {
-    transition-duration: 0.4s;
+    transition-duration: 0.6s;
     transform: translate(-10px, -10px);
     box-shadow: 10px 10px rgb(149, 225, 211);
 }
